@@ -50,15 +50,15 @@ function c(t, e, r, i, d, n, S, p) {
     options: s
   };
 }
-var l = function() {
+var a = function() {
   var e = this, r = e._self._c;
   return r("div", { staticClass: "sticker-component", style: e.stickerStyles, on: { click: function(i) {
     return e.$emit("click");
   } } }, [r("div", { staticClass: "css-sprite" })]);
-}, a = [], u = /* @__PURE__ */ c(
+}, l = [], u = /* @__PURE__ */ c(
   o,
-  l,
   a,
+  l,
   !1,
   null,
   "15592500"
@@ -127,7 +127,9 @@ const h = u.exports, k = {
 };
 var f = function() {
   var e = this, r = e._self._c;
-  return r("div", { staticClass: "sticker-system-component", style: e.componentStyle }, [e._l(e.displayStickers, function(i) {
+  return r("div", { staticClass: "sticker-system-component", style: e.componentStyle }, [e.showStickerTable ? r("div", { staticClass: "background", on: { click: function(i) {
+    e.showStickerTable = !1;
+  } } }) : e._e(), e._l(e.displayStickers, function(i) {
     return r("Sticker", { key: i.clientMutationId, attrs: { src: e.stickerConfig.filePath, gridX: e.stickerConfig.stickers[i.stickerId].gridX, gridY: e.stickerConfig.stickers[i.stickerId].gridY, gridWidth: e.stickerConfig.width, gridHeight: e.stickerConfig.height, scale: e.actualStickerSize / e.stickerConfig.width, position: e.randomId === i.senderId ? "right" : "left" } });
   }), r("button", { staticClass: "sticker-button", style: e.stickerButtonStyle, attrs: { type: "button", disabled: e.hasOwnSticker }, on: { click: function(i) {
     e.showStickerTable = !e.showStickerTable;
@@ -142,7 +144,7 @@ var f = function() {
   g,
   !1,
   null,
-  "fded19f3"
+  "588e9574"
 );
 const _ = m.exports;
 export {
