@@ -50,15 +50,15 @@ function c(t, e, r, i, d, n, S, p) {
     options: s
   };
 }
-var a = function() {
+var l = function() {
   var e = this, r = e._self._c;
   return r("div", { staticClass: "sticker-component", style: e.stickerStyles, on: { click: function(i) {
     return e.$emit("click");
   } } }, [r("div", { staticClass: "css-sprite" })]);
-}, l = [], u = /* @__PURE__ */ c(
+}, a = [], u = /* @__PURE__ */ c(
   o,
-  a,
   l,
+  a,
   !1,
   null,
   "15592500"
@@ -115,7 +115,7 @@ const h = u.exports, k = {
     },
     stickerButtonStyle() {
       return {
-        bottom: this.showStickerTable ? "calc(var(--actual-sticker-size) * 2.5)" : "0px"
+        bottom: this.showStickerTable ? "calc(var(--actual-sticker-size) * 1.75)" : "0px"
       };
     }
   },
@@ -142,7 +142,7 @@ var f = function() {
   g,
   !1,
   null,
-  "bd0da975"
+  "fded19f3"
 );
 const _ = m.exports;
 export {
