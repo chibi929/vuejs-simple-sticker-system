@@ -131,18 +131,18 @@ var f = function() {
     return r("Sticker", { key: i.clientMutationId, attrs: { src: e.stickerConfig.filePath, gridX: e.stickerConfig.stickers[i.stickerId].gridX, gridY: e.stickerConfig.stickers[i.stickerId].gridY, gridWidth: e.stickerConfig.width, gridHeight: e.stickerConfig.height, scale: e.actualStickerSize / e.stickerConfig.width, position: e.randomId === i.senderId ? "right" : "left" } });
   }), r("button", { staticClass: "sticker-button", style: e.stickerButtonStyle, attrs: { type: "button", disabled: e.hasOwnSticker }, on: { click: function(i) {
     e.showStickerTable = !e.showStickerTable;
-  } } }, [e._v(" " + e._s(e.showStickerTable ? "閉じる" : "スタンプ") + " ")]), e.showStickerTable ? r("div", { staticClass: "sticker-table" }, e._l(e.stickerConfig.stickers, function(i) {
-    return r("Sticker", { key: i.stickerId, attrs: { src: e.stickerConfig.filePath, gridX: i.gridX, gridY: i.gridY, gridWidth: e.stickerConfig.width, gridHeight: e.stickerConfig.height, scale: e.actualStickerSize / e.stickerConfig.width }, on: { click: function(d) {
+  } } }, [e._v(" " + e._s(e.showStickerTable ? "閉じる" : "スタンプ") + " ")]), e.showStickerTable ? r("div", { staticClass: "sticker-table" }, [e._l(e.stickerConfig.stickers, function(i) {
+    return [i.unlocked ? r("Sticker", { key: i.stickerId, attrs: { src: e.stickerConfig.filePath, gridX: i.gridX, gridY: i.gridY, gridWidth: e.stickerConfig.width, gridHeight: e.stickerConfig.height, scale: e.actualStickerSize / e.stickerConfig.width }, on: { click: function(d) {
       return e.onClick(i.stickerId);
-    } } });
-  }), 1) : e._e()], 2);
+    } } }) : e._e()];
+  })], 2) : e._e()], 2);
 }, g = [], m = /* @__PURE__ */ c(
   k,
   f,
   g,
   !1,
   null,
-  "1e123c78"
+  "bd0da975"
 );
 const _ = m.exports;
 export {

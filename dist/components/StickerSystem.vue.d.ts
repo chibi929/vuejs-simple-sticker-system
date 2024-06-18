@@ -9,6 +9,7 @@ export interface IStickerConfig {
         name: string;
         gridX: number;
         gridY: number;
+        unlocked: boolean;
     }[];
 }
 export interface IStickerData {
