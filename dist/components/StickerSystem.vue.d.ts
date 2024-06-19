@@ -1,20 +1,21 @@
 import { PropType } from 'vue';
 
+interface IStickerData {
+    stickerId: string;
+    name: string;
+    gridX: number;
+    gridY: number;
+    unlocked: boolean;
+}
 export interface IStickerConfig {
     filePath: string;
     width: number;
     height: number;
-    stickers: {
-        stickerId: number;
-        name: string;
-        gridX: number;
-        gridY: number;
-        unlocked: boolean;
-    }[];
+    stickers: IStickerData[];
 }
-export interface IStickerData {
+export interface ISendStickerData {
     clientMutationId: string;
-    stickerId: number;
+    stickerId: string;
     timestamp: number;
     senderId: string;
 }
@@ -28,20 +29,21 @@ declare const _default: import('vue').DefineComponent<{
         type: PropType<IStickerConfig>;
         required: true;
     };
-    displayStickers: {
-        type: PropType<IStickerData[]>;
+    receiveStickers: {
+        type: PropType<ISendStickerData[]>;
         default: never[];
     };
 }, {}, {
     randomId: string;
     showStickerTable: boolean;
 }, {
+    optimizedStickers(): Record<string, IStickerData>;
     actualStickerSize(): number;
     hasOwnSticker(): boolean;
     componentStyle(): Record<string, string>;
     stickerButtonStyle(): Record<string, string>;
 }, {
-    onClick(stickerId: number): void;
+    onClick(stickerId: string): void;
 }, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     stickerSize: {
         type: StringConstructor;
@@ -52,12 +54,12 @@ declare const _default: import('vue').DefineComponent<{
         type: PropType<IStickerConfig>;
         required: true;
     };
-    displayStickers: {
-        type: PropType<IStickerData[]>;
+    receiveStickers: {
+        type: PropType<ISendStickerData[]>;
         default: never[];
     };
 }>>, {
     stickerSize: string;
-    displayStickers: IStickerData[];
+    receiveStickers: ISendStickerData[];
 }>;
 export default _default;

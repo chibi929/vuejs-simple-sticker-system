@@ -1,4 +1,4 @@
-import { default as StickerSystem, IStickerConfig, IStickerData } from './components/StickerSystem.vue';
+import { default as StickerSystem, ISendStickerData, IStickerConfig } from './components/StickerSystem.vue';
 
 export { StickerSystem };
-export type { IStickerConfig, IStickerData };
+export type { IStickerConfig, ISendStickerData };
