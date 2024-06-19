@@ -20,6 +20,10 @@ export interface ISendStickerData {
     senderId: string;
 }
 declare const _default: import('vue').DefineComponent<{
+    useLockedIcon: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
     stickerSize: {
         type: StringConstructor;
         default: string;
@@ -45,6 +49,10 @@ declare const _default: import('vue').DefineComponent<{
 }, {
     onClick(stickerId: string): void;
 }, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
+    useLockedIcon: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
     stickerSize: {
         type: StringConstructor;
         default: string;
@@ -59,6 +67,7 @@ declare const _default: import('vue').DefineComponent<{
         default: never[];
     };
 }>>, {
+    useLockedIcon: boolean;
     stickerSize: string;
     receiveStickers: ISendStickerData[];
 }>;

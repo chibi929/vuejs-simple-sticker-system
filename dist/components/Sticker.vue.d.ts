@@ -28,9 +28,15 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
         validator: (value: string) => boolean;
     };
+    locked: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }, {}, {}, {
     stickerStyles(): Record<string, string>;
-}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
+}, {
+    onClickSticker(): void;
+}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     src: {
         type: StringConstructor;
         required: true;
@@ -60,8 +66,13 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
         validator: (value: string) => boolean;
     };
+    locked: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
 }>>, {
     scale: number;
     position: string;
+    locked: boolean;
 }>;
 export default _default;
