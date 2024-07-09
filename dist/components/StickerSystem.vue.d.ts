@@ -9,8 +9,10 @@ interface IStickerData {
 }
 export interface IStickerConfig {
     filePath: string;
-    width: number;
-    height: number;
+    srcWidth: number;
+    srcHeight: number;
+    gridWidth: number;
+    gridHeight: number;
     stickers: IStickerData[];
 }
 export interface ISendStickerData {

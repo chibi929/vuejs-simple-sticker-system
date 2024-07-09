@@ -1,1 +1,1 @@
-# vuejs-simple-sticker-system
+# vuejs-volatilize-sticker-system

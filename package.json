@@ -1,7 +1,7 @@
 {
-  "name": "@chibi929/vuejs-simple-sticker-system",
+  "name": "@chibi929/vuejs-volatilize-sticker-system",
   "private": true,
-  "version": "0.3.1",
+  "version": "0.3.3",
   "type": "module",
   "files": [
     "dist"

@@ -3,6 +3,14 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
         required: true;
     };
+    srcWidth: {
+        type: NumberConstructor;
+        required: true;
+    };
+    srcHeight: {
+        type: NumberConstructor;
+        required: true;
+    };
     gridX: {
         type: NumberConstructor;
         required: true;
@@ -39,6 +47,14 @@ declare const _default: import('vue').DefineComponent<{
 }, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     src: {
         type: StringConstructor;
+        required: true;
+    };
+    srcWidth: {
+        type: NumberConstructor;
+        required: true;
+    };
+    srcHeight: {
+        type: NumberConstructor;
         required: true;
     };
     gridX: {
