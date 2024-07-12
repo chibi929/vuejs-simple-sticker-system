@@ -223,8 +223,8 @@ export default Vue.extend({
 
 ## Sprite image sample
 
-![Sprite image sample](./docs/sushi_stickers-min.png)
+![Sprite image sample](https://github.com/user-attachments/assets/bae96ff1-1717-4970-ab33-b4a6af816101)
 
 ## DEMO
 
-![DEMO](./docs/demo.gif)
+![DEMO](https://github.com/user-attachments/assets/f84b0499-3b0e-491d-b749-3c0c52c475fd)
